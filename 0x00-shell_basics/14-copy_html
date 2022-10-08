@@ -1,0 +1,2 @@
+#!/binbash
+cp -un *.html ../

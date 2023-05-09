@@ -1,0 +1,26 @@
+In this post, we'll explain each step of the process in detail, from the initial DNS request to the final database access.
+
+1. DNS Request
+The first step is to translate the human-readable URL "www.google.com" into an IP address that can be understood by the computer network. This process is known as a Domain Name System (DNS) request, and it involves contacting a DNS server that can resolve the URL into an IP address. The DNS server responds with the IP address of the server that hosts the website, which is needed for the next step.
+
+2. TCP/IP
+Once the IP address of the server is obtained, the browser establishes a Transmission Control Protocol (TCP) connection with the server. TCP is a reliable, connection-oriented protocol that ensures the data is delivered without errors and in the correct order. The browser and the server exchange data packets using the Internet Protocol (IP), which ensures that the data is sent to the correct destination on the internet.
+
+3. Firewall
+Before the TCP connection can be established, the data packets must pass through a firewall. A firewall is a security system that controls and monitors incoming and outgoing network traffic. Its purpose is to prevent unauthorized access to the server and protect it from malicious attacks.
+
+4. HTTPS/SSL
+After the TCP connection is established, the browser and server negotiate a secure communication channel using the HTTPS (Hyper Text Transfer Protocol Secure) protocol. HTTPS uses SSL (Secure Socket Layer) or TLS (Transport Layer Security) encryption to ensure that the data transmitted between the browser and server is secure and cannot be intercepted or tampered with by third parties.
+
+5. Load-balancer
+The HTTPS request is then sent to a load balancer, which distributes the incoming requests across multiple servers to ensure optimal performance and availability. The load balancer uses various algorithms to determine which server should handle each request based on factors such as the server's current workload, response time, and availability.
+
+6. Web Server
+Once the load balancer determines which server should handle the request, the HTTPS request is sent to the web server. The web server processes the request and returns the requested web page to the browser. The web server may also execute server-side scripts and interact with databases to generate dynamic content.
+
+7. Application Server
+For more complex websites, an application server may be used to handle the processing of data and the generation of content. The application server can interact with databases, business logic, and other third-party services to generate the dynamic content that is displayed on the website.
+
+8. Database
+Finally, if the web page requires data from a database, the application server sends a request to the database, which retrieves the requested data and sends it back to the application server. The application server then uses the retrieved data to generate the dynamic content that is displayed on the web page.
+

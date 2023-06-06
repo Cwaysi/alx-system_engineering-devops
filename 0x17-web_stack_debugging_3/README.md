@@ -44,5 +44,4 @@ root@e514b399d69d:~# curl -s 127.0.0.1:80 | grep Holberton
 ```
 
 
-## Author
-* **Robert Deprizio** - [BD20171998](https://github.com/BD20171998)
+

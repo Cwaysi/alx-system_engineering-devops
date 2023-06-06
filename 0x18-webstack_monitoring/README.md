@@ -37,6 +37,3 @@ Learning Objectives
 
 </details>
 
-
-## Author
-* **Robert Deprizio** - [BD20171998](https://github.com/BD20171998)

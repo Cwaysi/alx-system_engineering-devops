@@ -166,6 +166,3 @@ wintermancer@lapbox ~/reddit_api/project $ python3 100-main.py not_a_valid_subre
 
 </details>
 
-
-## Author
-* **Robert Deprizio** - [BD20171998](https://github.com/BD20171998)

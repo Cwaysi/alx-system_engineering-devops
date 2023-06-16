@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Find the process IDs (PIDs) of Gunicorn workers
+pids=$(pgrep gunicorn)
+
+# Print the current process IDs
+echo "Current worker PIDs: $pids"
+
+# Send a graceful reload signal to each worker
+for pid in $pids; do
+  echo "Reloading worker: $pid"
+  kill -HUP $pid
+done
+
+# Wait for a few seconds for workers to finish processing requests
+sleep 5
+
+# Verify the status of the reload
+new_pids=$(pgrep gunicorn)
+if [ "$pids" != "$new_pids" ]; then
+  echo "Gunicorn reload successful!"
+else
+  echo "Gunicorn reload failed!"
+fi
